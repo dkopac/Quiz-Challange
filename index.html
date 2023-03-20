@@ -4,6 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>Quiz Challenge</title>
   </head>
+
+  <body>
+    <!--Highscores link-->
+    <a href="./scores.html">View Highscores</a>
+
+    <div id="wrapper">
+      <!--timer-->
+      <div id="currentTime"></div>
+      <!--Quiz-->
+      <div id="questionsDiv">
+        <h1>Challenge Questions</h1>
+        <p>
+          Answer the following questions before time runs out. Note: Incorrect
+          answers will lead to a loss of time and scoring.
+        </p>
+        <ul id="choices ul"></ul>
+        <!--Buttons-->
+        <button id="startTime">Start Quiz</button>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
