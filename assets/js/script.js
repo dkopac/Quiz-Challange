@@ -184,6 +184,16 @@ function allDone() {
         score: timeRemaining,
       };
       console.log(finalScore);
+      var allScores = localStorage.getItem("allScores");
+      if (allScores === null) {
+        allScores = [];
+      } else {
+        var newScore = JSON.parse(allScores);
+      }
+      allScores.push(finalScore);
+      var newScore = JSON.stringify(allScores);
+      localStorage.setItem("allScores", newScore);
+      window.location.replace("./scores.html");
     }
   });
 }
